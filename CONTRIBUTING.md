@@ -1,5 +1,7 @@
 # Contribution Guidelines
 
+**This repo:** add or edit datasets in [`datasets.md`](datasets.md) (summary table + detailed entry) and in the matching file under [`tasks/`](tasks/) when the dataset fits a downstream task. Keep chronological order in `datasets.md`; task tables are grouped by topic, not year.
+
 Please note that this project is released with a [Contributor Code of Conduct](https://github.com/sindresorhus/awesome/blob/main/code-of-conduct.md). By participating in this project you agree to abide by its terms.
 
 ## Adding an awesome list
