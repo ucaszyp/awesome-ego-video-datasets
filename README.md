@@ -16,7 +16,7 @@
 
 ## Datasets
 
-Entries use a single table, sorted by **year (newest first)**, then **name**. Scale and tasks are short summaries; see each paper for full detail. Task-oriented groupings are also maintained under [`tasks/`](tasks/).
+Entries use a single table, sorted by **year (newest first)**, then **name**. Scale and tasks are short summaries; see [`datasets.md`](datasets.md) for full per-dataset detail (paper references, exact scale, download links).
 
 | Name | Year | Hours / clips (short) | Key tasks | Paper | Link |
 |------|------|------------------------|-----------|-------|------|
