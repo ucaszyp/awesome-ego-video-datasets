@@ -7,6 +7,7 @@
 ## Table of Contents
 
 - [Datasets](#datasets)
+- [Datasets by Downstream Task](#datasets-by-downstream-task)
 - [Papers & Surveys](#papers--surveys)
 - [Benchmarks & Challenges](#benchmarks--challenges)
 - [Tools & Libraries](#tools--libraries)
@@ -79,6 +80,102 @@ Entries use a single table, sorted by **year (newest first)**, then **name**. Sc
 | Charades-Ego | 2018 | Paired ego / exo | Alignment, actions | [arXiv](https://arxiv.org/abs/1804.09626) | See paper |
 | FPHA | 2018 | 1.2K seq. hand action | Hand pose + action | [CVPR 2018](https://openaccess.thecvf.com/content_cvpr_2018/html/Garcia-Hernando_First-Person_Hand_Action_CVPR_2018_paper.html) | [Site](https://guiggh.github.io/publications/first-person-hands/) |
 | EgoGesture | 2017 | 2K+ videos / 24K samples | Gesture recognition | IEEE TMM 2018 | [Site](https://nlpr.ia.ac.cn/iva/yfzhang/datasets/egogesture.html) |
+
+## Datasets by Downstream Task
+
+Many egocentric datasets serve multiple purposes. The per-task lists below group the **same datasets** by the downstream tasks they are most commonly used for, so you can quickly find what you need for a specific research direction. A dataset may appear under more than one category. For full detail on any entry, see [`datasets.md`](datasets.md).
+
+### Video Generation & World-Model Pretraining
+
+- **DreamDojo-HV** (2026) — [arXiv](https://arxiv.org/abs/2602.06949)
+- **In-lab** (2026) — [arXiv](https://arxiv.org/abs/2602.06949)
+- **Ego-1K** (2026) — [Hugging Face](https://huggingface.co/datasets/facebook/ego-1k)
+- **Ropedia Xperience-10M** (2026) — [Hugging Face](https://huggingface.co/datasets/ropedia-ai/xperience-10m)
+- **EgoEdit** (2025) — [Project](https://snap-research.github.io/EgoEdit)
+- **EgoVid-5M** (2024) — [Site](https://egovid.github.io/)
+
+### Memory, Summarization & Long-Form Understanding
+
+- **EgoLife** (2025) — [Site](https://egolife-ai.github.io/)
+- **VidChapters-7M** (2023) — [Site](https://antoyang.github.io/vidchapters.html) *(not egocentric-only)*
+- **Multi-Ego** (2022) — [GitHub](https://github.com/M-Elfeki/Multi-DPP)
+- **UT Ego** (2012) — [UT Austin](http://vision.cs.utexas.edu/projects/egocentric_data/UT_Egocentric_Dataset.html)
+
+### VLMs, Instructions & QA
+
+- **HowToDIV** (2025) — [GitHub](https://github.com/google/howtodiv)
+- **InterVLA** (2025) — [Site](https://liangxuy.github.io/InterVLA/)
+- **HD-EPIC** (2025) — [Site](https://hd-epic.github.io/)
+- **EgoEMS** (2025) — [GitHub](https://github.com/UVA-DSA/EgoEMS)
+- **EgoSchema** (2023) — [Site](https://egoschema.github.io/)
+- **EgoTaskQA** (2022) — [Site](https://sites.google.com/view/egotaskqa)
+- **AssistQ** (2022) — [GitHub](https://github.com/showlab/AssistQ)
+- **EgoClip** (2022) — [GitHub](https://github.com/showlab/EgoVLP)
+- **EgoVQA** (2019)
+
+### Action & Activity Recognition
+
+- **EgoScale** (2026) — [arXiv](https://arxiv.org/abs/2602.16710)
+- **EgoCampus** (2025) — [GitHub](https://github.com/ComputerVisionRutgers/EgoCampus)
+- **EgoExoLearn** (2024) — [GitHub](https://github.com/OpenGVLab/EgoExoLearn)
+- **AEA** (2024) — [Aria](https://www.projectaria.com/datasets/aea/)
+- **E³** (2024) — [GitHub](https://github.com/Exploring-Embodied-Emotion-official/E3)
+- **EgoSurgery** (2024) — [GitHub](https://github.com/Fujiry0/EgoSurgery)
+- **HoloAssist** (2023) — [Site](https://holoassist.github.io/)
+- **WEAR** (2023) — [Site](https://mariusbock.github.io/wear/)
+- **EGOFALLS** (2023) — [Dataverse](https://www.dataverse.nl/dataset.xhtml?persistentId=doi:10.34894/HO5GE3)
+- **Epic-Sounding-Object** (2023) — [GitHub](https://github.com/WikiChao/Ego-AV-Loc)
+- **N-EPIC-KITCHENS** (2022) — [GitHub](https://github.com/EgocentricVision/N-EPIC-Kitchens)
+- **Ego4D** (2022) — [Site](https://ego4d-data.org/)
+- **EPIC-KITCHENS-100** (2021) — [Site](https://epic-kitchens.github.io/)
+- **Ego-Deliver** (2021) — [Site](https://egodeliver.github.io/EgoDeliver_Dataset/)
+- **HOMAGE** (2021) — [Site](https://homeactiongenome.org/)
+- **MECCANO** (2021) — [Site](https://iplab.dmi.unict.it/MECCANO/)
+- **LEMMA** (2020) — [Site](https://sites.google.com/view/lemma-activity)
+- **EgoCom** (2020) — [GitHub](https://github.com/facebookresearch/EgoCom-Dataset)
+- **Charades-Ego** (2018) — [AllenAI](https://prior.allenai.org/projects/charades-ego)
+- **EGTEA Gaze+** (2018) — [Georgia Tech](https://cbs.ic.gatech.edu/fpv/)
+- **EgoGesture** (2017) — [Site](https://nlpr.ia.ac.cn/iva/yfzhang/datasets/egogesture.html)
+- **ADL** (2012) — [UMBC](https://www.csee.umbc.edu/~hpirsiav/papers/ADLdataset/)
+
+### Hand–Object Interaction, Dexterity & 3D
+
+- **FEEL** (2026) — [Project](https://www.cs.umd.edu/~edessale/feel)
+- **EgoDex** (2025) — [GitHub](https://github.com/apple/ml-egodex)
+- **EgoPoints** (2025) — [GitHub](https://github.com/AhmadDarKhalil/EgoPoints)
+- **AssemblyHands** (2023) — [Site](https://assemblyhands.github.io/)
+- **EgoObjects** (2023) — [GitHub](https://github.com/facebookresearch/EgoObjects)
+- **ENIGMA-51** (2023) — [Site](https://fpv-iplab.github.io/ENIGMA-51/)
+- **HOI4D** (2022) — [Site](https://hoi4d.github.io/)
+- **EgoHOS** (2022) — [GitHub](https://github.com/owenzlz/EgoHOS)
+- **EgoBody** (2022) — [Site](https://egobody.ethz.ch/)
+- **Touch and Go** (2022) — [Site](https://touch-and-go.github.io/)
+- **VISOR** (2022) — [Site](https://epic-kitchens.github.io/VISOR)
+- **EgoPAT3D** (2022) — [Site](https://ai4ce.github.io/EgoPAT3D/)
+- **H2O** (2021) — [Site](https://h2odataset.ethz.ch/)
+- **TREK-150** (2021) — [Site](https://machinelearning.uniud.it/datasets/trek150/)
+- **FPHA** (2018) — [Site](https://guiggh.github.io/publications/first-person-hands/)
+- **EgoDexter** (2017) — [MPI](https://handtracker.mpi-inf.mpg.de/projects/OccludedHands/EgoDexter.htm)
+- **EgoHands** (2015) — [IU](http://vision.soic.indiana.edu/projects/egohands/)
+
+### Procedural Activities & Skill Learning
+
+- **EgoYC2 / Exo2EgoDVC** (2025) — [GitHub](https://github.com/ut-vision/Exo2EgoDVC)
+- **HowToDIV** (2025) — [GitHub](https://github.com/google/howtodiv)
+- **EgoExoLearn** (2024) — [GitHub](https://github.com/OpenGVLab/EgoExoLearn)
+- **IndustReal** (2024) — [Site](https://timschoonbeek.github.io/industreal.html)
+- **ADT (Aria Digital Twin)** (2023) — [Aria](https://www.projectaria.com/datasets/adt/)
+- **Assembly101** (2022) — [Site](https://assembly-101.github.io/)
+- **EgoProceL** (2022) — [Site](https://sid2697.github.io/egoprocel/)
+- **EPIC-Tent** (2019) — [Data](https://data.bris.ac.uk/data/dataset/2ite3tu1u53n42hjfh3886sa86)
+
+### Egocentric 3D Scene Understanding & Localization
+
+- **Ego-1K** (2026) — [Hugging Face](https://huggingface.co/datasets/facebook/ego-1k)
+- **ADT (Aria Digital Twin)** (2023) — [Aria](https://www.projectaria.com/datasets/adt/)
+- **Ego-Exo4D** (2024) — [Site](https://ego-exo4d-data.org/)
+- **EgoCart** (2018) — [Site](https://iplab.dmi.unict.it/EgocentricShoppingCartLocalization/)
+- **DR(eye)VE** (2018) — [Site](http://aimagelab.ing.unimore.it/dreyeve)
 
 ## Papers & Surveys
 
