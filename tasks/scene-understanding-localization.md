@@ -8,4 +8,4 @@
 | EgoCart | 2018 | [Site](https://iplab.dmi.unict.it/EgocentricShoppingCartLocalization/) |
 | DR(eye)VE | 2018 | [Site](http://aimagelab.ing.unimore.it/dreyeve) |
 
-See also the full list in [`../datasets.md`](../datasets.md).
+See also the full dataset list in [`../datasets.md`](../datasets.md) and benchmarks in [`../benchmarks.md`](../benchmarks.md).

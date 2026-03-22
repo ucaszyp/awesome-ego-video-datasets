@@ -8,13 +8,16 @@
 
 | Path | Contents |
 |------|----------|
-| [`datasets.md`](datasets.md) | **Full dataset index:** summary table (year, scale, tasks, paper, link) + detailed per-dataset entries (scale, paper, download). |
-| [`tasks/`](tasks/) | **Seven downstream-task views** — the same datasets grouped by research direction so you can jump to what fits your goal (generation, memory, VLM/QA, action, hand–object, procedural, 3D scene). A dataset may appear in more than one file. |
+| [`datasets.md`](datasets.md) | **Dataset catalog only:** summary table + detailed per-dataset entries (scale, paper, download). |
+| [`benchmarks.md`](benchmarks.md) | **Benchmarks & challenges** built on egocentric video, ordered **newest → oldest** by year. |
+| [`tasks/`](tasks/) | **Seven downstream-task views** — datasets grouped by research direction (generation, memory, VLM/QA, action, hand–object, procedural, 3D scene). A dataset may appear in more than one file. |
+
+`README.md` is the navigation hub; [`datasets.md`](datasets.md) is the dataset index; [`benchmarks.md`](benchmarks.md) is the evaluation index.
 
 ## Table of Contents
 
 - [Papers & Surveys](#papers--surveys)
-- [Benchmarks & Challenges](#benchmarks--challenges)
+- [Benchmarks & challenges (`benchmarks.md`)](benchmarks.md)
 - [Tools & Libraries](#tools--libraries)
 - [Related Awesome Lists](#related-awesome-lists)
 - [Contributing](#contributing)
@@ -44,17 +47,18 @@ Sorted by **year (newest first)**.
 - [Rescaling Egocentric Vision: Collection, Pipeline and Challenges for EPIC-KITCHENS-100](https://epic-kitchens.github.io/public/ek100.pdf) — Damen et al., IJCV 2021.
 - [Charades-Ego: A Large-Scale Dataset of Paired Third and First Person Videos](https://arxiv.org/abs/1804.09626) — Sigurdsson et al., 2018.
 
-## Benchmarks & Challenges
+## Benchmarks & challenges
 
-| Name | Year | Focus | Paper / site | Notes |
-|------|------|-------|--------------|-------|
-| *TBD* | — | — | — | *Placeholder — add rows via PR.* |
+Evaluation benchmarks and official challenge suites (with **primary egocentric data** called out) live in **[`benchmarks.md`](benchmarks.md)**, sorted **newest → oldest** by year. Dataset downloads and per-dataset metadata stay in [`datasets.md`](datasets.md).
 
 ## Tools & Libraries
 
 | Name | Description | Link |
 |------|-------------|------|
-| *TBD* | *Placeholder — add rows via PR.* | — |
+| Ego4D CLI | Official downloader and tooling for accessing Ego4D releases. | [GitHub](https://github.com/facebookresearch/Ego4d) |
+| HOMIE-toolkit | Toolkit released with Ropedia Xperience-10M. | [GitHub](https://github.com/Ropedia/HOMIE-toolkit) |
+| AssemblyHands Toolkit | Official toolkit for the AssemblyHands benchmark. | [GitHub](https://github.com/facebookresearch/assemblyhands-toolkit) |
+| TREK-150 Toolkit | Official toolkit for the TREK-150 tracking benchmark. | [GitHub](https://github.com/matteo-dunnhofer/TREK-150-toolkit) |
 
 ## Related Awesome Lists
 
@@ -65,8 +69,9 @@ Sorted by **year (newest first)**.
 ## Contributing
 
 1. High-quality, citable datasets with official access.
-2. Update [`datasets.md`](datasets.md) (summary table + detailed entry) and the relevant [`tasks/`](tasks/) file when adding a dataset.
-3. Keep the summary table and **Papers & Surveys** sorted by **year (newest first)**.
+2. **Datasets:** update [`datasets.md`](datasets.md) (summary + detailed entry) and the relevant [`tasks/`](tasks/) file.
+3. **Benchmarks:** add or edit rows in [`benchmarks.md`](benchmarks.md) (year sections, newest first).
+4. Keep the dataset summary table, **benchmarks.md** year sections, and **Papers & Surveys** sorted by **year (newest first)**.
 
 [CONTRIBUTING.md](CONTRIBUTING.md)
 

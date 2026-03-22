@@ -1,32 +1,102 @@
 # Contribution Guidelines
 
-**This repo:** add or edit datasets in [`datasets.md`](datasets.md) (summary table + detailed entry) and in the matching file under [`tasks/`](tasks/) when the dataset fits a downstream task. Keep chronological order in `datasets.md`; task tables are grouped by topic, not year.
+Thanks for helping improve this repository.
 
-Please note that this project is released with a [Contributor Code of Conduct](https://github.com/sindresorhus/awesome/blob/main/code-of-conduct.md). By participating in this project you agree to abide by its terms.
+This project is a curated index of egocentric video **datasets**, **benchmarks/challenges**, and **task-oriented** dataset views. Keep the three layers consistent: same names and years across files when the same resource appears in more than one place.
 
-## Adding an awesome list
+## What To Update
 
-Please ensure your pull request adheres to the [list of guidelines](.github/pull_request_template.md).
+When adding or editing a **dataset**, update:
 
-## Creating your own awesome list
+1. [`datasets.md`](datasets.md) (summary table + detailed entry)
+2. The relevant file(s) under [`tasks/`](tasks/)
+3. [`README.md`](README.md) only if the change affects the tools list or top-level navigation text
 
-To create your own list, check out the [instructions](https://github.com/sindresorhus/awesome/blob/main/create-list.md).
+When adding or editing a **benchmark or challenge suite**, update:
 
-## Adding something to an awesome list
+1. [`benchmarks.md`](benchmarks.md) (place the row in the correct **year** section, newest first; within the year, sort by name)
+2. [`datasets.md`](datasets.md) only if the benchmark introduces a **new** dataset corpus that should also be catalogued as data
 
-If you have something awesome to contribute to an awesome list, this is how you do it.
+## Repository Structure
 
-You will need a [GitHub account](https://github.com/join)! If you are new to GitHub, [get started here](https://github.com/firstcontributions/first-contributions).
+- [`README.md`](README.md): navigation hub (surveys, links to datasets/benchmarks, tools)
+- [`datasets.md`](datasets.md): dataset catalog only (summary + detailed entries)
+- [`benchmarks.md`](benchmarks.md): benchmarks and official challenges using egocentric video
+- [`tasks/`](tasks/): task-specific **dataset** views (not a second benchmark index)
 
-1. Access the awesome list's GitHub page. For example: https://github.com/sindresorhus/awesome
-2. Click on the `readme.md` file: ![Step 2 Click on Readme.md](https://cloud.githubusercontent.com/assets/170270/9402920/53a7e3ea-480c-11e5-9d81-aecf64be55eb.png)
-3. Now click on the edit icon. ![Step 3 - Click on Edit](https://cloud.githubusercontent.com/assets/170270/9402927/6506af22-480c-11e5-8c18-7ea823530099.png)
-4. You can start editing the text of the file in the in-browser editor. Make sure you follow the guidelines above. You can use [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/). ![Step 4 - Edit the file](https://cloud.githubusercontent.com/assets/170270/9402932/7301c3a0-480c-11e5-81f5-7e343b71674f.png)
-5. Say why you're proposing the changes, and then click on "Propose file change". ![Step 5 - Propose Changes](https://cloud.githubusercontent.com/assets/170270/9402937/7dd0652a-480c-11e5-9138-bd14244593d5.png)
-6. Submit the [pull request](https://help.github.com/articles/using-pull-requests/)!
+## Dataset Entry Rules
 
-## Updating your Pull Request
+### In `datasets.md`
 
-Sometimes, a maintainer of an awesome list will ask you to edit your Pull Request before it is included. This is normally due to spelling errors or because your PR didn't match the awesome-* list guidelines.
+Every dataset update should keep these two layers in sync:
 
-[Here](https://github.com/RichardLitt/knowledge/blob/master/github/amending-a-commit-guide.md) is a write up on how to change a Pull Request and the different ways you can do that.
+1. The summary table near the top
+2. The matching detailed entry in the long-form section
+
+The summary table is a fast-scan layer. The detailed entries are the canonical reference for scale, paper, and download details.
+
+### In `tasks/`
+
+Add the dataset to every task view where it is genuinely useful. A dataset may appear in multiple task files.
+
+Examples:
+
+- Action datasets go in [`tasks/action-activity.md`](tasks/action-activity.md)
+- QA / instruction datasets go in [`tasks/vlm-instruction-qa.md`](tasks/vlm-instruction-qa.md)
+- Procedural datasets go in [`tasks/procedural-skill-learning.md`](tasks/procedural-skill-learning.md)
+
+Do not force a dataset into a task file if the connection is weak.
+
+## Year Convention
+
+Use one year consistently across `README.md`, `datasets.md`, `benchmarks.md`, and `tasks/`:
+
+- Default to the primary public discovery year used for readers to identify the resource
+- Keep venue-specific timing details in the `Paper` field
+- If a dataset and benchmark extension have different years, explain that in the detailed entry instead of mixing year conventions in headings
+
+In practice, prefer consistency across repository views over trying to encode every release nuance in the title line.
+
+## Scope And Taxonomy
+
+When adding entries, be explicit about scope:
+
+- `egocentric`: primarily first-person
+- `ego+exo`: paired first- and third-person or multiview
+- `not ego-only`: relevant to egocentric research, but not exclusively egocentric
+
+If a resource is not ego-only, mark that clearly in the relevant row or note.
+
+## Benchmark Rules
+
+The benchmark index lives in [`benchmarks.md`](benchmarks.md).
+
+Add a row only if it is one of these:
+
+- A standalone benchmark with a clear evaluation setup and public splits or leaderboard
+- A challenge suite or official benchmark hub (e.g. Ego4D, EPIC-KITCHENS challenges)
+- A dataset release whose main use is a defined benchmark task (say so in the **Notes** column)
+
+In the **Notes** column, tag entries as *Standalone*, *Suite*, or *Dataset+benchmark* (see [`benchmarks.md`](benchmarks.md) header).
+
+## Formatting Rules
+
+- Use official project, dataset, or paper links when possible
+- Keep descriptions short and factual
+- Sort summary-style tables by year descending unless the file already uses another documented convention
+- Preserve existing Markdown table style
+- Avoid marketing language
+
+## Pull Requests
+
+Before opening a PR, check:
+
+1. The dataset name, year, and primary link are consistent across all touched files
+2. You updated both the summary and detailed entry when changing `datasets.md`
+3. You added task-file links only where they are clearly relevant
+4. You updated `benchmarks.md` if the change adds or renames a benchmark; you updated `README.md` only if tools or top-level navigation change
+5. The rendered Markdown tables still look correct
+
+## Code Of Conduct
+
+Please be respectful and constructive in issues and pull requests.

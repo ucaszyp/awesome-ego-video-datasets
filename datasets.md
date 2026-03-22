@@ -2,7 +2,9 @@
 
 ## Summary table
 
-All datasets in one table, sorted by **year (newest first)**, then **name**. Short scale and task hints; full citations and downloads are in **Detailed entries** below.
+This file is the **dataset catalog** only (corpora, captures, annotations, and official downloads). **Benchmarks and challenge suites** are listed separately in [`benchmarks.md`](benchmarks.md).
+
+The summary table is sorted by **year (newest first)**, then **name**. It includes every dataset linked from [`tasks/`](tasks/) plus selected additional resources that are still treated as **datasets** here (e.g. mixed-view video corpora used alongside egocentric work). The **Detailed entries** below are the canonical long-form archive; some older or niche datasets may appear only there.
 
 | Name | Year | Hours / clips (short) | Key tasks | Paper | Link |
 |------|------|------------------------|-----------|-------|------|
@@ -37,7 +39,10 @@ All datasets in one table, sorted by **year (newest first)**, then **name**. Sho
 | EgoObjects | 2023 | 9.2K+ videos | Detection, instance seg | [OpenAccess](https://openaccess.thecvf.com/content/ICCV2023/html/Zhu_EgoObjects_A_Large-Scale_Egocentric_Dataset_for_Object_Detection_and_Instance_ICCV_2023_paper.html) | [GitHub](https://github.com/facebookresearch/EgoObjects) |
 | EgoSchema | 2023 | 250+ h / 5K QA | Long-form video QA | NeurIPS 2023 D&B | [Site](https://egoschema.github.io/) |
 | HoloAssist | 2023 | 169 h | Interactive assistants | [OpenAccess](https://openaccess.thecvf.com/content/ICCV2023/html/Wang_HoloAssist_an_Egocentric_Human_Interaction_Dataset_for_Interactive_AI_Assistants_ICCV_2023_paper.html) | [Site](https://holoassist.github.io/) |
+| POV-Surgery | 2023 | ~88K frames, 53 seq. (synth.) | Surgical hand–tool pose, segmentation | MICCAI 2023 | [Site](https://batfacewayne.github.io/POV_Surgery_io/) · [GitHub](https://github.com/BatFaceWayne/POV_Surgery) |
+| PVSG | 2023 | 400 vids, ~150K frames | Panoptic video scene graph (ego + third-person) | CVPR 2023 | [Site](https://jingkang50.github.io/PVSG/) · [GitHub](https://github.com/LilyDaytoy/OpenPVSG) |
 | VidChapters-7M | 2023 | 817K videos / 7M chapters | Chaptering (not ego-only) | NeurIPS 2023 D&B | [Site](https://antoyang.github.io/vidchapters.html) |
+| VOST | 2023 | 713 videos | VOS, transforming objects | CVPR 2023 | [Site](https://www.vostdataset.org/) · [GitHub](https://github.com/yka-dl/VOST) |
 | WEAR | 2023 | ~19 h outdoor sports | Activity + IMU | IMWUT / arXiv | [Site](https://mariusbock.github.io/wear/) |
 | Assembly101 | 2022 | 513 h multiview | Assembly, procedure | [CVPR 2022](https://openaccess.thecvf.com/content/CVPR2022/html/Sener_Assembly101_A_Large-Scale_Multi-View_Video_Dataset_for_Understanding_Procedural_Activities_CVPR_2022_paper.html) | [Site](https://assembly-101.github.io/) |
 | AssistQ | 2022 | 100 long videos / 529 QA | Instructional QA | ECCV 2022 | [GitHub](https://github.com/showlab/AssistQ) |
@@ -60,17 +65,29 @@ All datasets in one table, sorted by **year (newest first)**, then **name**. Sho
 | MECCANO | 2021 | ~55 h industrial | HOI, ego | WACV 2021 | [Site](https://iplab.dmi.unict.it/MECCANO/) |
 | TREK-150 | 2021 | 150 EPIC seq. | Object tracking | ICCVW / IJCV | [Site](https://machinelearning.uniud.it/datasets/trek150/) |
 | EgoCom | 2020 | 38.5 h conversation | Multiperson ego dialog | IEEE TPAMI 2020 | [GitHub](https://github.com/facebookresearch/EgoCom-Dataset) |
+| EGO-CH | 2020 | 27+ h, cultural sites | Visitor behavior, POI tasks | Pattern Recognition Letters 2020 | N/A |
 | LEMMA | 2020 | Multi-view activities | Multi-agent tasks | ECCV 2020 | [Site](https://sites.google.com/view/lemma-activity) |
+| You2Me | 2020 | 14 seq., chest-mounted GoPro | Body pose via ego–exo interaction | CVPR 2020 | [GitHub](https://github.com/facebookresearch/you2me) (archived) |
 | EgoVQA | 2019 | 600+ QAs | Video QA | ICCV 2019 Workshop | See workshop / authors |
+| EPIC-Tent | 2019 | 7+ h, tent assembly | Procedural, dual HMD + gaze | ICCV 2019 Workshop | [Data](https://data.bris.ac.uk/data/dataset/2ite3tu1u53n42hjfh3886sa86) · [Annotations](https://github.com/youngkyoonjang/EPIC_Tent2019) |
 | Charades-Ego | 2018 | Paired ego / exo | Alignment, actions | [arXiv](https://arxiv.org/abs/1804.09626) | See paper |
+| DoMSEV | 2018 | 80 h, 48 seq. | Semantic fast-forward, first-person video | CVPR 2018 | [UFMG](https://www.verlab.dcc.ufmg.br/semantic-hyperlapse/cvpr2018-dataset/) |
+| DR(eye)VE | 2018 | ~6 h driving, 555K frames | Gaze prediction, driving ego video | IEEE TPAMI 2018 | [Project](http://aimagelab.ing.unimore.it/dreyeve) · [GitHub](https://github.com/ndrplz/dreyeve) |
+| EGTEA Gaze+ | 2018 | 28 h cooking | Gaze + action recognition | ECCV 2018 | [Georgia Tech](https://cbs.ic.gatech.edu/fpv/) |
+| EgoCart | 2018 | Retail RGB-D, 9 videos | Indoor / cart localization | ICPR 2018; TCSVT 2019 | [Site](https://iplab.dmi.unict.it/EgocentricShoppingCartLocalization/) |
 | FPHA | 2018 | 1.2K seq. hand action | Hand pose + action | [CVPR 2018](https://openaccess.thecvf.com/content_cvpr_2018/html/Garcia-Hernando_First-Person_Hand_Action_CVPR_2018_paper.html) | [Site](https://guiggh.github.io/publications/first-person-hands/) |
+| IU ShareView | 2018 | 9 paired ego video sets | Person seg / ID across synchronized wearers | ECCV 2018 | [Project](http://vision.soic.indiana.edu/firstthird-eccv2018/) |
+| EgoDexter | 2017 | ~3.2K frames, 4 seq. | Hand tracking under occlusion | ICCV 2017 | [MPI](https://handtracker.mpi-inf.mpg.de/projects/OccludedHands/EgoDexter.htm) |
 | EgoGesture | 2017 | 2K+ videos / 24K samples | Gesture recognition | IEEE TMM 2018 | [Site](https://nlpr.ia.ac.cn/iva/yfzhang/datasets/egogesture.html) |
+| EgoHands | 2015 | 4.8K labeled frames | Hand detection / boxes | ICCV 2015 | [IU](http://vision.soic.indiana.edu/projects/egohands/) |
+| ADL | 2012 | ~10 h, 20 participants | ADL recognition, objects | CVPR 2012 | [UMBC](https://www.csee.umbc.edu/~hpirsiav/papers/ADLdataset/) |
+| UT Ego | 2012 | ~17 h, 4 long videos | Summarization, long-form ego | CVPR 2012 | [UT Austin](http://vision.cs.utexas.edu/projects/egocentric_data/UT_Egocentric_Dataset.html) |
 
 ---
 
 ## Detailed entries
 
-Below, every dataset is sorted **newest → oldest** with a `| Field | Detail |` block (scale, paper, download).
+Year labels follow the repository's primary discovery year convention used in the summary/task views; venue-specific timing details stay in the `Paper` field. Below, entries are maintained **newest → oldest** with a `| Field | Detail |` block (scale, paper, download). **Benchmark and challenge listings** are maintained in [`benchmarks.md`](benchmarks.md), not duplicated here.
 
 ---
 
@@ -90,7 +107,7 @@ Below, every dataset is sorted **newest → oldest** with a `| Field | Detail |`
 | **Paper** | Gao, S. et al. "DreamDojo: A Generalist Robot World Model from Large-Scale Human Videos." [arXiv:2602.06949](https://arxiv.org/abs/2602.06949), 2026 (Table 1) |
 | **Download** | N/A |
 
-### 3. FEEL — Force-Enhanced Egocentric Learning (2026)
+### 3. FEEL (Force-Enhanced Egocentric Learning) (2026)
 
 | Field | Detail |
 |-------|--------|
@@ -106,7 +123,7 @@ Below, every dataset is sorted **newest → oldest** with a `| Field | Detail |`
 | **Paper** | NVIDIA GEAR Lab. "EgoScale: Scaling Dexterous Manipulation with Diverse Egocentric Human Data." [arXiv:2602.16710](https://arxiv.org/abs/2602.16710), 2026 |
 | **Download** | N/A |
 
-### 5. EgoEMS (2025 / AAAI 2026)
+### 5. EgoEMS (2025)
 
 | Field | Detail |
 |-------|--------|
@@ -178,7 +195,7 @@ Below, every dataset is sorted **newest → oldest** with a `| Field | Detail |`
 | **Paper** | Yang, J. et al. "EgoLife: Towards Egocentric Life Assistant." CVPR 2025. [arXiv](https://arxiv.org/abs/2503.01773) |
 | **Download** | [egolife-ai.github.io](https://egolife-ai.github.io/) · [Hugging Face](https://huggingface.co/datasets/lmms-lab/EgoLife) · [GitHub](https://github.com/EvolvingLMMs-Lab/EgoLife) |
 
-### 14. EgoEdit / EgoEditData (2025)
+### 14. EgoEdit (EgoEditData) (2025)
 
 | Field | Detail |
 |-------|--------|
@@ -210,7 +227,7 @@ Below, every dataset is sorted **newest → oldest** with a `| Field | Detail |`
 | **Paper** | Schoonbeek, T. et al. "IndustReal: A Dataset for Procedure Step Recognition Handling Execution Errors in Egocentric Videos in an Industrial-Like Setting." WACV 2024 |
 | **Download** | [Project page](https://timschoonbeek.github.io/industreal.html) · [4TU](https://data.4tu.nl/datasets/b008dd74-020d-4ea4-a8ba-7bb60769d224) |
 
-### 18. E³ — Exploring Embodied Emotion (2024)
+### 18. E³ (Exploring Embodied Emotion) (2024)
 
 | Field | Detail |
 |-------|--------|
@@ -250,7 +267,7 @@ Below, every dataset is sorted **newest → oldest** with a `| Field | Detail |`
 | **Paper** | Huang, Y. et al. "EgoExoLearn: A Dataset for Bridging Asynchronous Ego- and Exo-centric View of Procedural Activities in Real World." CVPR 2024 |
 | **Download** | [GitHub](https://github.com/OpenGVLab/EgoExoLearn) · [Hugging Face](https://huggingface.co/datasets/hyf015/EgoExoLearn) |
 
-### 23. AEA — Aria Everyday Activities (2024)
+### 23. AEA (Aria Everyday Activities) (2024)
 
 | Field | Detail |
 |-------|--------|
@@ -314,7 +331,7 @@ Below, every dataset is sorted **newest → oldest** with a `| Field | Detail |`
 | **Paper** | Huang, C. et al. "Egocentric Audio-Visual Object Localization." CVPR 2023 |
 | **Download** | [GitHub](https://github.com/WikiChao/Ego-AV-Loc) |
 
-### 31. EgoYC2 (2023)
+### 31. EgoYC2 (2025)
 
 | Field | Detail |
 |-------|--------|
@@ -338,7 +355,7 @@ Below, every dataset is sorted **newest → oldest** with a `| Field | Detail |`
 | **Paper** | Zhu, C. et al. "EgoObjects: A Large-Scale Egocentric Dataset for Object Detection and Instance Segmentation." ICCV 2023 |
 | **Download** | [GitHub](https://github.com/facebookresearch/EgoObjects) · [Project Aria](https://www.projectaria.com/datasets/) |
 
-### 34. Ego-Exo4D (2023)
+### 34. Ego-Exo4D (2024)
 
 | Field | Detail |
 |-------|--------|
@@ -370,7 +387,7 @@ Below, every dataset is sorted **newest → oldest** with a `| Field | Detail |`
 | **Paper** | Ohkawa, T. et al. "AssemblyHands: Towards Egocentric Activity Understanding via 3D Hand Pose Estimation." CVPR 2023 |
 | **Download** | [assemblyhands.github.io](https://assemblyhands.github.io/) · [Toolkit](https://github.com/facebookresearch/assemblyhands-toolkit). CC BY-NC 4.0 |
 
-### 38. ADT — Aria Digital Twin (2023)
+### 38. ADT (Aria Digital Twin) (2023)
 
 | Field | Detail |
 |-------|--------|
@@ -514,7 +531,7 @@ Below, every dataset is sorted **newest → oldest** with a `| Field | Detail |`
 | **Paper** | Kwon, T. et al. "H2O: Two Hands Manipulating Objects for First Person Interaction Recognition." ICCV 2021 |
 | **Download** | [h2odataset.ethz.ch](https://h2odataset.ethz.ch/) · [GitHub](https://github.com/taeinkwon/h2odataset) |
 
-### 56. Ego4D (2021)
+### 56. Ego4D (2022)
 
 | Field | Detail |
 |-------|--------|
@@ -682,7 +699,7 @@ Below, every dataset is sorted **newest → oldest** with a `| Field | Detail |`
 | **Paper** | Mueller, F. et al. "Real-time Hand Tracking under Occlusion from an Egocentric RGB-D Sensor." ICCV 2017 |
 | **Download** | [MPI](https://handtracker.mpi-inf.mpg.de/projects/OccludedHands/EgoDexter.htm) (1.99 GB ZIP) |
 
-### 77. PEV — UTokyo Paired Ego-Video (2016)
+### 77. PEV (UTokyo Paired Ego-Video) (2016)
 
 | Field | Detail |
 |-------|--------|
@@ -786,7 +803,7 @@ Below, every dataset is sorted **newest → oldest** with a `| Field | Detail |`
 | **Paper** | Kitani, K.M. et al. "Fast Unsupervised Ego-Action Learning for First-Person Sports Videos." CVPR 2011 |
 | **Download** | N/A |
 
-### 90. CMU-MMAC (2009/2011)
+### 90. CMU-MMAC (2011)
 
 | Field | Detail |
 |-------|--------|
@@ -804,4 +821,4 @@ Below, every dataset is sorted **newest → oldest** with a `| Field | Detail |`
 
 ---
 
-*Last updated 2026-03-21.*
+*Last updated 2026-03-22.*

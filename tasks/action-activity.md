@@ -25,4 +25,4 @@
 | EgoGesture | 2017 | [Site](https://nlpr.ia.ac.cn/iva/yfzhang/datasets/egogesture.html) |
 | ADL | 2012 | [UMBC](https://www.csee.umbc.edu/~hpirsiav/papers/ADLdataset/) |
 
-See also the full list in [`../datasets.md`](../datasets.md).
+See also the full dataset list in [`../datasets.md`](../datasets.md) and benchmarks in [`../benchmarks.md`](../benchmarks.md).

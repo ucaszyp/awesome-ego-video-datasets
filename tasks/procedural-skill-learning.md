@@ -11,4 +11,4 @@
 | EgoProceL | 2022 | [Site](https://sid2697.github.io/egoprocel/) |
 | EPIC-Tent | 2019 | [Data](https://data.bris.ac.uk/data/dataset/2ite3tu1u53n42hjfh3886sa86) |
 
-See also the full list in [`../datasets.md`](../datasets.md).
+See also the full dataset list in [`../datasets.md`](../datasets.md) and benchmarks in [`../benchmarks.md`](../benchmarks.md).

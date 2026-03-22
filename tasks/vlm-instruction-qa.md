@@ -12,4 +12,4 @@
 | EgoClip | 2022 | [GitHub](https://github.com/showlab/EgoVLP) |
 | EgoVQA | 2019 | ICCV 2019 Workshop (EPIC) |
 
-See also the full list in [`../datasets.md`](../datasets.md).
+See also the full dataset list in [`../datasets.md`](../datasets.md) and benchmarks in [`../benchmarks.md`](../benchmarks.md).

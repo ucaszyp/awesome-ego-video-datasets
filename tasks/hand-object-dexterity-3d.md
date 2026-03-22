@@ -20,4 +20,4 @@
 | EgoDexter | 2017 | [MPI](https://handtracker.mpi-inf.mpg.de/projects/OccludedHands/EgoDexter.htm) |
 | EgoHands | 2015 | [IU](http://vision.soic.indiana.edu/projects/egohands/) |
 
-See also the full list in [`../datasets.md`](../datasets.md).
+See also the full dataset list in [`../datasets.md`](../datasets.md) and benchmarks in [`../benchmarks.md`](../benchmarks.md).

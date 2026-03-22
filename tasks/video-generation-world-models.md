@@ -9,4 +9,4 @@
 | EgoEdit | 2025 | [Project](https://snap-research.github.io/EgoEdit) |
 | EgoVid-5M | 2024 | [Site](https://egovid.github.io/) |
 
-See also the full list in [`../datasets.md`](../datasets.md).
+See also the full dataset list in [`../datasets.md`](../datasets.md) and benchmarks in [`../benchmarks.md`](../benchmarks.md).
