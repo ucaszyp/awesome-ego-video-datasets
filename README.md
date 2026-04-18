@@ -158,6 +158,7 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 
 | Name | Year | Scale | Key tasks | Paper | Link |
 |------|------|-------|-----------|-------|------|
+| EgoTL | 2026 | 100+ daily household tasks | Long-horizon reasoning, spatial QA | [Paper](https://arxiv.org/abs/2604.09535) | [Site](https://ego-tl.github.io/) |
 | ⭐ HD-EPIC | 2025 | ~41 h / dense labels | Fine-grained kitchen, VQA | [Paper](https://arxiv.org/abs/2502.04144) | [Site](https://hd-epic.github.io/) |
 | EgoEMS | 2025 | 20+ h emergency scenarios | EMS QA, multimodal | [Paper](https://arxiv.org/abs/2511.09894) | [GitHub](https://github.com/UVA-DSA/EgoEMS) |
 | HowToDIV | 2025 | ~24 h instructional | Dialog, procedural QA | [Paper](https://arxiv.org/abs/2508.11192) | [GitHub](https://github.com/google/howtodiv) |
@@ -168,6 +169,9 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 | EgoVQA | 2019 | 600+ QAs | Video QA | [Paper](https://openaccess.thecvf.com/content_ICCVW_2019/html/EPIC/Fan_EgoVQA_-_An_Egocentric_Video_Question_Answering_Benchmark_Dataset_ICCVW_2019_paper.html) | N/A |
 
 ### Entries
+
+- **EgoTL** (2026) — 100+ daily household tasks with think-aloud chains, navigation and manipulation annotations, and metric spatial labels for long-horizon egocentric reasoning and QA.
+  [![arXiv](https://img.shields.io/badge/arXiv-2604.09535-b31b1b.svg)](https://arxiv.org/abs/2604.09535) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://ego-tl.github.io/)
 
 - [⭐️] **HD-EPIC** (2025) — ~41 h of densely labeled cooking video with recipe steps, audio events, gaze, 3D grounding, and VQA supervision.
   [![arXiv](https://img.shields.io/badge/arXiv-2502.04144-b31b1b.svg)](https://arxiv.org/abs/2502.04144) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://arxiv.org/abs/2502.04144) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/hd-epic/hd-epic-annotations)
@@ -199,6 +203,7 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 
 | Benchmark | Capability | Primary data | Official link | Notes |
 |-----------|------------|--------------|---------------|-------|
+| EgoTL-Bench | Long-horizon planning, action reasoning, perceptual-metric understanding | EgoTL | [Site](https://ego-tl.github.io/) | Dataset+benchmark |
 | EgoEMS | EMS QA, multimodal assessment | EgoEMS | [GitHub](https://github.com/UVA-DSA/EgoEMS) | Dataset+benchmark |
 | HD-EPIC | Fine-grained kitchen understanding, VQA | HD-EPIC | [Site](https://hd-epic.github.io/) | Dataset+benchmark |
 | HowToDIV | Multi-turn instructional dialog & QA | HowToDIV | [GitHub](https://github.com/google/howtodiv) | Standalone |
@@ -221,6 +226,7 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 | EgoCampus | 2025 | ~32 h / campus paths (paper) | Gaze, pedestrian ego | [Paper](https://arxiv.org/abs/2512.07668) | [GitHub](https://github.com/ComputerVisionRutgers/EgoCampus) |
 | AEA | 2024 | 143 seq. / ~7.3 h | Everyday activities, Aria | [Paper](https://arxiv.org/abs/2402.13349) | [Site](https://www.projectaria.com/datasets/aea/) |
 | EgoSurgery (Phase / Tool / HTS) | 2024 | Open-surgery ego video | Phase, tools, segmentation | [Paper](https://arxiv.org/abs/2405.19644) | [GitHub](https://github.com/Fujiry0/EgoSurgery) |
+| EgoExo-Fitness | 2024 | 32 h / 1,276 seq. | Full-body action, quality assessment | [Paper](https://arxiv.org/abs/2406.08877) | [GitHub](https://github.com/iSEE-Laboratory/EgoExo-Fitness) |
 | E³ (Exploring Embodied Emotion) | 2024 | 50+ h | Emotion, multimodal ego | [Paper](https://proceedings.neurips.cc/paper_files/paper/2024/hash/d611d5c0251d9680f869c5d2c46c6fcd-Abstract-Datasets_and_Benchmarks_Track.html) | [GitHub](https://github.com/Exploring-Embodied-Emotion-official/E3) |
 | EGOFALLS | 2023 | Fall samples / AV | Fall detection | [Paper](https://arxiv.org/abs/2309.04579) | [Site](https://www.dataverse.nl/dataset.xhtml?persistentId=doi:10.34894/HO5GE3) |
 | Epic-Sounding-Object | 2023 | 3.2K short clips | Audio-visual localization | [Paper](https://openaccess.thecvf.com/content/CVPR2023/html/Huang_Egocentric_Audio-Visual_Object_Localization_CVPR_2023_paper.html) | [GitHub](https://github.com/WikiChao/Ego-AV-Loc) |
@@ -264,6 +270,9 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 
 - **EgoSurgery (Phase / Tool / HTS)** (2024) — Open-surgery ego video with companion phase, tool, and hand-tool segmentation releases for phase recognition, instrument analysis, and dense surgical interaction understanding.
   [![arXiv](https://img.shields.io/badge/arXiv-2405.19644-b31b1b.svg)](https://arxiv.org/abs/2405.19644) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://arxiv.org/abs/2405.19644) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/Fujiry0/EgoSurgery)
+
+- **EgoExo-Fitness** (2024) — 32 h of synchronized egocentric and exocentric fitness video with temporal boundaries, sub-step annotations, action comments, and quality scores for full-body action understanding.
+  [![arXiv](https://img.shields.io/badge/arXiv-2406.08877-b31b1b.svg)](https://arxiv.org/abs/2406.08877) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/iSEE-Laboratory/EgoExo-Fitness) [![🤗](https://img.shields.io/badge/%F0%9F%A4%97-Dataset-yellow.svg)](https://huggingface.co/datasets/Lymann/EgoExo-Fitness)
 
 - **E³ (Exploring Embodied Emotion)** (2024) — 50+ h; Emotion, multimodal ego.
   [![Paper](https://img.shields.io/badge/Paper-NeurIPS24-b31b1b.svg)](https://proceedings.neurips.cc/paper_files/paper/2024/hash/d611d5c0251d9680f869c5d2c46c6fcd-Abstract-Datasets_and_Benchmarks_Track.html) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/Exploring-Embodied-Emotion-official/E3)
@@ -343,6 +352,7 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 |-----------|------------|--------------|---------------|-------|
 | E³ (Exploring Embodied Emotion) | Emotion recognition, classification, localization, reasoning | E³ | [GitHub](https://github.com/Exploring-Embodied-Emotion-official/E3) | Standalone |
 | EGOFALLS | Fall detection (visual + audio) | EGOFALLS | [Dataverse](https://www.dataverse.nl/dataset.xhtml?persistentId=doi:10.34894/HO5GE3) | Standalone |
+| EgoExo-Fitness | Action localization, cross-view verification, skill determination | EgoExo-Fitness | [GitHub](https://github.com/iSEE-Laboratory/EgoExo-Fitness) | Dataset+benchmark |
 | Ego4D | Action, forecasting, VQA, narration, … | Ego4D | [Site](https://ego4d-data.org/) | Suite |
 | EPIC-KITCHENS-100 | Action recognition, detection, anticipation, … | EPIC-KITCHENS-100 | [Site](https://epic-kitchens.github.io/) | Suite |
 | EgoGesture | Egocentric hand gesture recognition | EgoGesture | [Site](https://nlpr.ia.ac.cn/iva/yfzhang/datasets/egogesture.html) | Standalone |
@@ -467,6 +477,8 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 
 | Name | Year | Scale | Key tasks | Paper | Link |
 |------|------|-------|-----------|-------|------|
+| EgoVerse | 2026 | 1,362 h / ~80K episodes | Robot learning, manipulation skills | [Paper](https://arxiv.org/abs/2604.07607) | [Site](https://egoverse.ai/) |
+| GM-100 | 2026 | 100+ tasks / 13K+ trajectories | Robot manipulation, embodied evaluation | [Paper](https://arxiv.org/abs/2601.11421) | [Site](https://www.rhos.ai/research/gm-100) |
 | EgoYC2 / Exo2EgoDVC | 2025 | ~43 h cooking | Dense captioning, procedural | [Paper](https://arxiv.org/abs/2311.16444) | [GitHub](https://github.com/ut-vision/Exo2EgoDVC) |
 | EgoExoLearn | 2024 | 120 h ego+exo | Procedural, async views | [Paper](https://openaccess.thecvf.com/content/CVPR2024/html/Huang_EgoExoLearn_A_Dataset_for_Bridging_Asynchronous_Ego-_and_Exo-centric_View_CVPR_2024_paper.html) | [GitHub](https://github.com/OpenGVLab/EgoExoLearn) |
 | IndustReal | 2024 | ~6 h industrial | Procedure steps, errors | [Paper](https://openaccess.thecvf.com/content/WACV2024/html/Schoonbeek_IndustReal_A_Dataset_for_Procedure_Step_Recognition_Handling_Execution_Errors_WACV_2024_paper.html) | [Site](https://timschoonbeek.github.io/industreal.html) |
@@ -477,6 +489,12 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 | GTEA Gaze | 2011 | 17 meal preparation sessions, 7 cooking activities, gaze tracking annotations | procedural activities & skill learning | [Paper](https://doi.org/10.1007/978-3-642-33718-5_23) | [Site](https://cbs.ic.gatech.edu/fpv/) |
 
 ### Entries
+
+- **EgoVerse** (2026) — 1,362 h of egocentric human demonstrations spanning ~80K episodes and 1,965 tasks for robot learning from human manipulation experience.
+  [![arXiv](https://img.shields.io/badge/arXiv-2604.07607-b31b1b.svg)](https://arxiv.org/abs/2604.07607) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://egoverse.ai/) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/GaTech-RL2/EgoVerse)
+
+- **GM-100** (2026) — 100+ detail-oriented robot manipulation tasks with 13K+ teleoperated trajectories and robot first-person camera views for embodied skill evaluation.
+  [![arXiv](https://img.shields.io/badge/arXiv-2601.11421-b31b1b.svg)](https://arxiv.org/abs/2601.11421) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://www.rhos.ai/research/gm-100) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/yuz1wan/GM-X)
 
 - **EgoYC2 / Exo2EgoDVC** (2025) — ~43 h cooking; Dense captioning, procedural.
   [![arXiv](https://img.shields.io/badge/arXiv-2311.16444-b31b1b.svg)](https://arxiv.org/abs/2311.16444) [![Site](https://img.shields.io/badge/Site-Link-blue.svg)](https://arxiv.org/abs/2311.16444) [![Code](https://img.shields.io/badge/Code-GitHub-black.svg)](https://github.com/ut-vision/Exo2EgoDVC)
@@ -510,7 +528,7 @@ Sorted newest to oldest, with flagship surveys and corpus papers highlighted fir
 
 | Benchmark | Capability | Primary data | Official link | Notes |
 |-----------|------------|--------------|---------------|-------|
-| None listed | — | — | — | — |
+| GM-100 | Detail-oriented robot manipulation evaluation | GM-100 | [Site](https://www.rhos.ai/research/gm-100) | Dataset+benchmark |
 
 ## 🗺️ 3D Scene Understanding & Localization
 
